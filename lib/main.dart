@@ -81,7 +81,7 @@ class _XylophoneAppState extends State<XylophoneApp> {
       // before playing a new one on the same player instance.
       // Calling stop() explicitly first ensures a clean state.
       await player!.stop();
-      await player!.play(AssetSource(soundAsset));
+      await player.play(AssetSource(soundAsset));
     } catch (e) {
       if (kDebugMode) {
         print(
